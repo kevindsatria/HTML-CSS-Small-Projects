@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ChordCraft</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header id="header"> 
+            <nav id="nav-bar" class="nav-bar">
+                <div id="nav-div" class="nav-div">
+                    <div><a id="slogan" class="slogan">Craft Your Sound</a></div>
+                    <div class="logo"><a id="top" href="#"><img id="header-img" src="logo.png"  alt="ChordCraft Logo"></a></div>
+                    <div id="list">
+                        <ul>
+                            <li><a class="nav-link" href="#about-me">About Me</a></li>
+                            <li><a class="nav-link" href="#prices">Prices</a></li>
+                            <li><a class="nav-link" href="#contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="sign-up">
+                <h1>Sign Up Here</h1>
+                <div>
+                    <form class="form" id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                        <div>
+                            <label for="email">Enter Your Email:
+                                <input name="email" id="email" type="email" placeholder="newuser@chordcraft.com">
+                                <input type="submit" id="submit">
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="intro">
+                <h1>Meet Your Instructor</h1>
+                <div class="video">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YPjnxSAgrOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            <section id="about-me" class="about-me">
+                <div>
+                    <h2>About Me</h2>
+                </div>
+                <div class="bio">
+                    <p>Hi, I’m Kevin, a passionate guitarist with over 8 years of experience bringing the joy of music to life. My journey with the guitar began as a personal adventure, and over time, it has grown into a deep passion that I now share with others. I believe music is a universal language, and my goal is to help you speak it fluently through the guitar.
+                    Having explored various genres—from classic rock to folk and everything in between—I draw inspiration from diverse musical influences. This eclectic background allows me to teach not just the fundamentals but also the nuances of playing different styles. My lessons focus on developing both technical skills and musical expression, helping students find their unique voice on the instrument.
+                    </p>
+                    <h3>ChordCraft's Mission</h3>
+                    <p>At ChordCraft, my focus is not just on teaching techniques but on fostering a genuine love for music. Whether you're picking up a guitar for the first time or looking to refine your skills, I’m here to guide you every step of the way. From learning your favorite songs to understanding music theory, my lessons are tailored to your goals and pace.
+                    I also emphasize the importance of creativity and improvisation in music. I encourage my students to experiment and discover their sound, providing a nurturing environment where they can flourish. Music has always been my creative outlet, and I’m excited to share that inspiration with you. Let’s embark on a musical journey together—one chord at a time.
+                    </p>
+                    <h3>My Works</h3>
+                    <ul class="my-works">
+                        <li>Performed at various venues, including local clubs, festivals, and intimate acoustic sessions.</li>
+                        <li>Collaborated with a range of musicians and bands, providing guitar work on tracks spanning genres like folk, indie rock, and blues.</li>
+                        <li>Featured guitar compositions in several independent music projects, contributing both rhythm and lead guitar.</li>
+                        <li>Worked in studio settings, recording and arranging guitar parts for solo artists and full band productions.</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="prices" class="prices">
+                <article class="price">
+                    <div>
+                        <h1>Starter Strings</h1>
+                        <h2>$150</h2>
+                        <ul>
+                            <li>4 lessons focused on building a strong foundation.</li>
+                            <li>Learn essential chords and strumming patterns.</li>
+                            <li>Play beginner-friendly songs.</li>
+                            <li>Personalized guidance tailored to your pace.</li>
+                            <li>Ideal for those new to the guitar, aiming to play their first songs confidently.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="price">
+                    <div>
+                        <h1>Intermediate Jam</h1>
+                        <h2>$225</h2>
+                        <ul>
+                            <li>6 lessons designed to elevate your guitar skills.</li>
+                            <li>Explore fingerpicking, barre chords, and solo improvisation.</li>
+                            <li>Master popular songs and different musical genres.</li>
+                            <li>Expand your repertoire with a focus on intermediate techniques.</li>
+                            <li>Perfect for guitarists who know the basics and want to gain fluency.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="price">
+                    <div>
+                        <h1>Virtuoso</h1>
+                        <h2>$300</h2>
+                        <ul>
+                            <li>8 lessons for advanced guitarists.</li>
+                            <li>Learn complex solos, alternate tunings, and advanced techniques.</li>
+                            <li>Dive into music theory, songwriting, and improvisation.</li>
+                            <li>Receive guidance on performance preparation.</li>
+                            <li>Ideal for aspiring musicians ready to master their craft and unlock their creative potential.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="contacts" id="contacts">
+                <div>
+                    <label for="contacts">My Contacts</label>
+                    <ul>
+                        <li>929-431-9649</li>
+                        <li>kevindsatria@gmail.com</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <script>
+            const logo = document.getElementById("header-img");
+    
+            // Check if the image fails to load
+            logo.onerror = function() {
+                // Set the src to the online image if the local image is not found
+                this.src = "https://i.imgur.com/EDIEvJD.png";
+            };
+        </script>
+        </body>
+</html>

@@ -1,0 +1,349 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: rgb(158, 81, 95);
+    --secondary-color: rgb(236, 192, 183);
+}
+
+
+@media (max-width: 1700px){
+    form{
+        min-width: 520px;
+    }
+}
+.slogan {
+    font-family: 'Allura', cursive;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-left: 30px;
+    letter-spacing: 5px;
+    transition: .6s;
+    position: relative;
+}
+
+.slogan:hover {
+    color: white;
+    cursor: default;
+}
+
+.slogan:hover::after { inset: 0 0 0 0;}
+
+.nav-div div {
+    font-size: 1.5rem;
+    padding: 0 10px 0 10px;
+    border-radius: 15px;
+}
+
+header {
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+    border-bottom: solid 5px rgba(102, 46, 55, 0.356);
+}
+
+.nav-div {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px; 
+    font-size: 1rem;
+    transition: transform .3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.5);
+}
+
+nav ul {
+    padding-left: 0px;
+    margin: 0;
+}
+
+.list {
+    overflow-x: hidden;
+}
+
+li a {
+    color: var(--secondary-color);
+}
+
+.logo{
+    width: 35%;
+    max-width: 325px;
+}
+
+img {
+    max-width: 100%;
+    transition: transform .3s ease;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+body {
+    margin:0;
+    width: 100%;
+    background-color: rgba(236, 192, 183, 0.507);
+}
+
+.intro {
+    width: 100%;
+    margin: 70px auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+iframe {
+    width: 1024px;
+    height: 576px;
+}
+
+.video {
+    display: grid;
+    place-items: center;
+}
+
+.about-me{
+    width: 100%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lora', serif;
+}
+
+.about-me h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section > div {
+    align-items: center;
+    width: 100%;
+}
+
+div > p {
+    margin: 0 auto;
+}
+
+p {
+    width: 90%;
+    font-family: 'Lora', serif;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    text-indent: 2.5%;
+    line-height: 1.75;
+}
+
+
+
+.bio {
+    background-color: rgba(224, 150, 161, 0.762);
+    padding: 40px 25px;
+    border-radius: 40px;
+    width: 70%;
+}
+
+.prices {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.price > div {
+    min-width: 350px;
+    min-height: 450px;
+    border: solid rgba(0, 0, 0, 0.425) 3px;
+    width: 35%;
+    height: 450px;
+    margin: 0 25px;
+    border-radius: 5px;
+    background-color: rgba(255, 236, 236, 0.462);
+}
+
+.price h1 {
+    margin: 0 auto;
+    padding: 25px 0;
+    background-color: var(--background-color);
+    color:rgb(255, 236, 236);
+    border-bottom: solid rgba(177, 177, 177, 0.562) 3px;
+}
+
+#about-me, #prices {
+    scroll-margin-top: 150px;  
+}
+
+h3 {
+    margin-left: 5%;
+    font-size: 1.1rem;
+}
+
+.my-works li  {
+    list-style: disc;
+    margin-left: 5%;
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 10px;
+}
+
+.price > div {
+    text-align: center;
+    width: 350px;
+    height: 500px;
+}
+
+.price > div > h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.price li {
+    width: 90%;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+article {
+    width: 400px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(224, 150, 161, 0.762);
+    width: 50%;
+    height: 125px;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    /* border: solid 5px rgba(158, 81, 95, 0.74); */
+    flex-direction: row;
+}
+
+input[type="email"]{
+    font-size: 1.25rem;
+    margin-left: 15px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding-left: 5px;
+    background-color: rgba(255, 236, 236, 0.63);
+    width: 250px;
+}
+
+input[type="submit"]{
+    font-size: 1.25rem;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    border: solid rgba(255, 236, 236, 0.63) 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    border: solid rgba(87, 23, 23, 0.63) 1px;
+    border-radius: 5px;
+}
+
+.sign-up div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div {
+    width: 100%;
+}
+
+.form label, .form input  {
+    display: inline-block;
+}
+
+.contacts div {
+    background-color: rgba(224, 150, 161, 0.548);
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts label {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.contacts li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contacts ul {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0;
+    margin: 30px 0 0 0;
+    list-style: none;
+    width: 70%;
+}
+
+section:target {
+    transform: scale(1.05); /* Slight expansion */
+    background-color: rgba(255, 236, 200, 0.9); /* Temporary background change */
+}
+
+/* Reset the styles back after the highlight */
+section:target {
+    animation: resetEffect 2s forwards; /* Adjust duration as needed */
+}
+
+/* Keyframes for resetting the effect after the initial highlight */
+@keyframes resetEffect {
+    0% {
+        transform: scale(1.05);
+        background-color: rgba(255, 236, 200, 0.9);
+    }
+    100% {
+        transform: scale(1);
+        background-color: inherit;
+    }
+}

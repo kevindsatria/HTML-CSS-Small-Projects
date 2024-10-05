@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    color:rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background: linear-gradient(
+        115deg,
+        rgba(255, 255, 255, 0.516),
+        rgba(208, 208, 208, 0.7)
+      ),url(https://cdn.archilovers.com/projects/b_730_2b06edd1-0561-4863-962b-bade4f7c38ff.jpg);
+    margin: 0;
+    min-width: 780px;
+    background-size: cover;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+    mix-blend-mode:darken;
+}
+
+:root {
+    --color1: rgb(79,145,205);
+    --color2: rgb(196, 208, 230);
+    --color3: rgb(0,46,98);
+}
+
+header{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+header h1{
+    color: var(--color3);
+}
+
+p{
+    text-align: center;
+    width: 65%;
+    margin: 0 auto 15px;
+    font-size: 16px;
+}
+
+section{
+    width: 75%;
+}
+
+select, input:not([type="radio"], [type="checkbox"]) {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+option {
+    color: black;
+}
+
+
+label {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    font-size: 30px;
+    transform: scale(1.25);
+}
+
+textarea{
+    width: 100%;
+    resize: none;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+fieldset{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+}
+
+.survey-section {
+    background-color: rgba(27,27,50, .8);
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-radius: 20px;
+    color: var(--color2);
+    font-size: 18px;
+}
+
+button[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(68, 182, 68);
+    border-radius: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.answer {
+    margin-left: 25px;
+}
+

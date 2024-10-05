@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>John Jay Club Survey</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="jjaylogo.png" alt="John Jay Logo" onerror="this.onerror=null; this.src='https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/johnjayathletics.com/documents/2014/8/25/Bloodhound_with_JJ83.jpg';" />
+        <h1 id="title">Clubs Survey</h1>
+    </header>
+    <main>
+        <section class="survey-section">
+            <p id="description">We invite you to share your feedback to help improve clubs and activities at John Jay College</p>
+            <form id="survey-form" method="POST">
+                <fieldset>
+                    <label id="name-label" for="name">Name:
+                        <input id="name" type="text" placeholder="Enter Your Full Name" required>
+                    </label>
+                    <label id="email-label" for="email">Email:
+                        <input id="email" type="email" placeholder="mymail@example.com" required>
+                    </label>
+                    <label id="number-label" for="age">Age:
+                        <input id="number" type="number" min="15" max="70" placeholder="15-70">
+                    </label>
+                    <label for="grade">What is your class standing/credits?
+                        <select name="grade" id="dropdown" required>
+                            <option value="" disabled selected>Select Current Grade</option>
+                            <option value="freshman">Freshman (0-29)</option>
+                            <option value="sophomore">Sophomore (30-59)</option>
+                            <option value="junior">Junior (60-89)</option>
+                            <option value="senior">Senior (90+)</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <div class="question">
+                        <label id="q1" for="q1">Do you participate in any clubs, teams, or any group student activities?</label>
+                        <label class="answer">
+                            <input name="q1" value="yes" type="radio" required> Yes
+                        </label>
+                        <label class="answer">
+                            <input name="q1" value="no" type="radio"> No
+                        </label>
+                    </div>
+                    <div class="question">
+                        <label id="q2" for="q2">Do you think John Jay has a wide variety of club activities?</label>
+                        <label class="answer">
+                            <input name="q2" value="absolutely" type="radio" required> Absolutely! 
+                        </label>
+                        <label class="answer">
+                            <input name="q2" value="yes_somewhat" type="radio"> Yes, but more options would help.
+                        </label>
+                        <label class="answer">
+                            <input name="q2" value="okay" type="radio"> It’s okay; more choices would be nice.
+                        </label>
+                        <label class="answer">
+                            <input name="q2" value="not_really" type="radio"> Not really; options are limited.
+                        </label>
+                        <label class="answer">
+                            <input name="q2" value="not_at_all" type="radio"> Not at all; I want to see more.
+                        </label>
+                        <label class="answer">
+                            <input name="q2" value="unsure" type="radio"> Unsure; I haven’t looked enough.
+                        </label>
+                    </div>
+                    <div class="question">
+                        <label id="q3" for="q3">Do you have any interest in joining or participating in one or more clubs?</label>
+                        <label class="answer">
+                            <input name="q3" value="yes" type="radio" required> Yes
+                        </label>
+                        <label class="answer">
+                            <input name="q3" value="no" type="radio"> No
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="improve">Select as many clubs you have interest in joining or learning about:</label>
+                    <label class="answer"><input type="checkbox" id="cybersecurity" name="clubs" value="Cybersecurity Club"> Cybersecurity Club</label>
+                    <label class="answer"><input type="checkbox" id="coding" name="clubs" value="Coding & Development Club"> Coding & Development Club</label>
+                    <label class="answer"><input type="checkbox" id="robotics" name="clubs" value="Robotics & Engineering Club"> Robotics & Engineering Club</label>
+                    <label class="answer"><input type="checkbox" id="women-in-tech" name="clubs" value="Women in Tech Club"> Women in Tech Club</label>
+                    <label class="answer"><input type="checkbox" id="game-dev" name="clubs" value="Game Development Club"> Game Development Club</label>
+                    <label class="answer"><input type="checkbox" id="data-science" name="clubs" value="Data Science & AI Club"> Data Science & AI Club</label>
+                    <label class="answer"><input type="checkbox" id="music" name="clubs" value="Music & Performing Arts Club"> Music & Performing Arts Club</label>
+                    <label class="answer"><input type="checkbox" id="debate" name="clubs" value="Debate & Public Speaking Club"> Debate & Public Speaking Club</label>
+                    <label class="answer"><input type="checkbox" id="sports" name="clubs" value="Sports & Fitness Club"> Sports & Fitness Club</label>
+                    <label class="answer"><input type="checkbox" id="none" name="clubs" value="None" onclick="uncheckOthers(this)"> None</label>
+                </fieldset>
+                <fieldset>
+                    <label for="suggestion">What clubs would you like to see in the future? Any suggestions on how we can improve our programs?</label>
+                    <textarea name="suggestions" id="suggestions" rows="5" placeholder="Write Suggestions Here"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button id="submit" type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
